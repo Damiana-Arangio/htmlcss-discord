@@ -7,9 +7,30 @@
     box-sizing: border-box;
 }
 
+/** LISTE */
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+/** LINK */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/** TESTO */
 body {
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+
+    /* Debug */
+    /* color: blue; */
 }
+
 
 /*! REGOLE GENERALI FLEXBOX  */
 
@@ -35,29 +56,31 @@ body {
 
 /*! INTESTAZIONE PAGINA */
 header {
-    height: 400px;
+    height: 523px;
+    background-color: rgb(37, 94, 233);
 }
 
-/** Sezione Main-Header */
+/** SEZIONE MAIN-HEADER */
 #main-header {
     flex-basis: 10%;
     padding-top: 10px;
     padding-bottom: 10px;
-
-    /* Debug */
-    background-color: aqua;
 }
 
 /* Barra di navigazione Header */
 #flex-nav {
     height: 100%;                           /* altezza 100% rispetto al padre -> main-header */
+    line-height: 100%;
 }
 
 /* Logo-Link-Login */
-.item-nav
+.item-nav-header
 {
     flex-grow: 1;                           /* Espansione dei flex-items: Logo-Link-Login*/
-
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
     /* Debug */
     background-color: yellow;
 }
@@ -67,23 +90,22 @@ header {
     padding-left: 5px;
 }
 
-/* Link nav */
-.link {
-    text-align: center;
+.item-nav-header.link {
+    justify-content: center;
 }
 
 /* Login nav */
-.login {
-    text-align: end;
+.item-nav-header.login {
+    justify-content: flex-end;
     padding-right: 5px;
 }
 
-/** Sezione Hero-Header */
+/** SEZIONE HERO-HEADER */
 #hero-header {
     flex-basis: 90%;
-
-    /* Debug */
-    background-color: blue;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .item-hero {
