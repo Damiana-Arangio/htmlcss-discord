@@ -24,7 +24,7 @@
     <!-- INTESTAZIONE PAGINA -->
     <header class="flex-container-column">
 
-        <!-- Sezione Main-Header  -->
+        <!-- SEZIONE MAIN-HEADER  -->
         <section id="main-header">
             <nav id="flex-nav" class="flex-container-row">
 
@@ -42,7 +42,7 @@
                         <li> <a href="#"> Assistenza </a></li>
                     </ul>
 
-                <!-- Bottone accedi-->
+                <!-- Bottone Accedi-->
                 <div class="item-nav-header login"> 
                     <button class="button-small"> 
                         <a href="#" class="color-black"> Accedi </a> 
@@ -51,10 +51,10 @@
             </nav>   
         </section>
 
-        <!-- Sezione Hero-Header  -->
+        <!-- SEZIONE HERO-HEADER  -->
         <section id="hero-header" class="flex-container-row">
             <div class="item-hero"> 
-                <h1 class="text-big color-white"> Il tuo posto per parlare </h1>
+                <h1 class="text-extrabig color-white"> Il tuo posto per parlare </h1>
                 <p class="text-medium color-white"> Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiaccherare ogni giorno e ritrovarsi più spesso</p>
                 <button class="text-medium button-big" >
                     <a href="#" class="color-black"> &darr; Scarica per Mac </a>
@@ -102,32 +102,103 @@
 
         <!-- SEZIONE LINK E SOCIAL  -->
         <section class="flex-container-row footer-section-link-social"> 
-            <!-- Social -->
-            <div class="footer-section-social"> </div>
-            <!-- Link -->
-            <div class="footer-section-link">
-                <!-- Link Prodotto -->
-                <div>  </div>
-                <!-- Link Compagnia -->
-                <div> </div>
-                <!-- Link Risorse -->
-                <div> </div>
-                <!-- Link Norme -->
-                <div> </div>
+
+            <!-- SOCIAL -->
+            <div class="footer-section-social">
+
+                <!-- Sottotiolo -->
+                <h2 class="text-big color-light-purple"> Il tuo posto per parlare </h2>
+
+                <!-- Select lingua -->
+                <div class="container-lingua">
+                    <img src="img/ita.png" alt="bandiera-italiana" id="bandiera-italiana">
+                    <select name="lingua" class="bg-color-dark color-white">
+                        <option value="opzione1"> Italiano </option>
+                    </select>                
+                </div>
+
+                <!-- Icone -->
+                <ul class="icone-social">
+                    <li> <a href="#"> <i class="fa-brands fa-twitter"></i> </a> </li>
+                    <li> <a href="#"> <i class="fa-brands fa-instagram"></i> </a> </li>
+                    <li> <a href="#"> <i class="fa-brands fa-facebook"></i> </a> </li>
+                    <li> <a href="#"> <i class="fa-brands fa-youtube"></i> </a> </li>
+                </ul>
             </div>
+
+            <!-- LINK -->
+            <nav class="footer-section-link">
+                <!-- Link Prodotto -->
+                <div>
+                    <h4 class="color-light-purple"> Prodotto </h4>
+                    <ul>
+                        <li> <a href="#"> Scarica </a></li>
+                        <li> <a href="#"> Perché Discord </a></li>
+                        <li> <a href="#"> Nitro </a></li>
+                        <li> <a href="#"> Sicurezza </a></li>
+                        <li> <a href="#"> Assistenza </a></li>
+                    </ul>               
+                </div>
+
+                <!-- Link Compagnia -->
+                <div>
+                    <h4 class="color-light-purple"> Compagnia </h4>
+                    <ul>
+                        <li> <a href="#"> Chi siamo </a></li>
+                        <li> <a href="#"> Lavora con noi </a></li>
+                        <li> <a href="#"> Marchio </a></li>
+                        <li> <a href="#"> Redazione </a></li>
+                        <li> <a href="#"> Negozio </a></li>
+                    </ul>
+                </div>
+
+                <!-- Link Risorse -->
+                <div>
+                    <h4 class="color-light-purple"> Risorse </h4>
+                    <ul>
+                        <li> <a href="#"> Scarica </a></li>
+                        <li> <a href="#"> Perché Discord </a></li>
+                        <li> <a href="#"> Nitro </a></li>
+                        <li> <a href="#"> Sicurezza </a></li>
+                        <li> <a href="#"> Assistenza </a></li>
+                        <li> <a href="#"> Scarica </a></li>
+                        <li> <a href="#"> Perché Discord </a></li>
+                        <li> <a href="#"> Nitro </a></li>
+                        <li> <a href="#"> Sicurezza </a></li>
+                        <li> <a href="#"> Assistenza </a></li>
+                        <li> <a href="#"> Assistenza </a></li>
+                    </ul>
+                </div>
+
+                <!-- Link Norme -->
+                <div>
+                    <h4 class="color-light-purple"> Norme </h4>
+                    <ul>
+                        <li> <a href="#"> Scarica </a></li>
+                        <li> <a href="#"> Perché Discord </a></li>
+                        <li> <a href="#"> Nitro </a></li>
+                        <li> <a href="#"> Sicurezza </a></li>
+                        <li> <a href="#"> Assistenza </a></li>
+                    </ul>
+            </nav> 
         </section>
                 
         <!-- LINEA ORIZZONTALE -->
         <div id="footer-separatore"></div>
 
         <!-- SEZIONE LOGO-BOTTONE -->
-        <section class="footer-section-logo-bottone"> 
-            <!-- Logo -->
-            <div class="logo bg-color-pink">Logo</div>
-            <!-- Logo -->
-            <div class=" bottone-footer bg-color-pink">Bottone</div>
-        </section>
+        <section class="footer-section-logo-bottone">
 
+            <!-- Logo discord -->
+            <a href="#" class="item-nav-header logo">
+                <img src="img/logo.svg" alt="logo Discord">
+            </a>
+
+            <!-- Bottone registrazione -->
+            <button class="button-small bg-color-light-purple">
+                <a href="#"> Registrati </a>
+            </button>   
+        </section>
     </footer>
 
 </body>

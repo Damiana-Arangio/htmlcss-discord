@@ -18,7 +18,7 @@ ul {
 }
 
 li {
-    display: inline;
+    /* display: inline; */
 }
 
 /** LINK */
@@ -45,11 +45,17 @@ button {
 }
 
 /** DIMENSIONE TESTI*/
+
 .text-medium {
     font-size: 16px;
 }
+
 .text-big {
-    font-size: 42px;
+    font-size: 25px;
+}
+
+.text-extrabig {
+    font-size: 2.7rem;
 }
 
 /** COLORI*/
@@ -59,6 +65,9 @@ button {
 background-color: #23272A;
 }
 
+.bg-color-light-purple {
+    background-color: #7288D8;
+}
 /* Colori testo */
 .color-black {
     color: black;
@@ -68,6 +77,10 @@ background-color: #23272A;
     color: white;
 }
 
+.color-light-purple {
+    color: #7288D8;
+}
+
 /*! REGOLE GENERALI FLEXBOX  */
 
 /** Flex-container con Main-Axis orizzontale */
@@ -75,8 +88,8 @@ background-color: #23272A;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .flex-container-column>*:not(#main-header):not(#footer-separatore):not(.footer-section-logo-bottone) {
@@ -106,14 +119,13 @@ header {
 /* Barra di navigazione Header */
 #flex-nav {
     height: 100%;                           /* altezza 100% rispetto al padre -> main-header */
-    line-height: 100%;
 }
 
 /* Logo-Link-Login */
 .item-nav-header
 {
-    flex-grow: 1;                           /* Espansione dei flex-items: Logo-Link-Login*/
     display: flex;
+    flex-grow: 1;                           /* Espansione dei flex-items: Logo-Link-Login*/
     gap: 20px;
     align-items: center;
 }
@@ -144,7 +156,7 @@ header {
 .item-hero {
     flex-basis: 80%;
     text-align: center;
-    margin: 160px 275px 0;
+    margin: 115px 122px 0;
 }
 
 .item-hero>* {
@@ -184,6 +196,7 @@ header {
 /** FOOTER SEZIONE LINK E SOCIAL */
 .footer-section-link-social {
     flex-basis: 90%;
+    align-items: flex-start;
 }
 
 /* Footer sezione social */
@@ -191,16 +204,39 @@ header {
     flex-basis: 30%;
 
     /* Debug */
-    background-color: rgb(200, 90, 108); 
+    /* background-color: rgb(200, 90, 108);  */
 } 
 
+.icone-social {
+    display: flex;
+    gap: 10px;
+}
+
+.container-lingua {
+    height: 10px;
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+#bandiera-italiana {
+    width: 25px;
+}
+
+select {
+    border: none;
+}
 /* Footer sezione link */
 .footer-section-link {
     display: flex;
     flex-basis: 70%;
 
     /* Debug */
-    background-color: rgb(37, 125, 128);
+    /* background-color: rgb(37, 125, 128); */
+}
+
+.footer-section-link h4, .footer-section-link li {
+    padding-bottom: 7px;
 }
 
 /* Figli di Footer sezione link */
@@ -211,7 +247,8 @@ header {
 /** FOOTER SEPARATORE */
 #footer-separatore {
     border: 0.5px solid white;
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
 }
 
 /** FOOTER SEZIONE LOGO E BOTTONE */
@@ -220,15 +257,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 140px 0;
+    margin: 10px 280px;
 
     /* Debug */
-    background-color: rgb(35, 192, 116);
+    /* background-color: rgb(35, 192, 116); */
 }
 
-.bottone-footer {
-    padding: 2px;
-}
 
 /*! DEBUG */
 
@@ -240,9 +274,9 @@ header {
     color: black;
 }
 
-.footer-section-link > * {
+/* .footer-section-link > * {
     border: 1px dotted white;
-}
+} */
 
 /** DEBUG ALTEZZE */
 
@@ -256,9 +290,9 @@ main>section:nth-child(4) {
     height: 500px;
 }
 
-footer {
-    height: 450px;
-}
+/* footer {
+    height: 450px; 
+} */
 
 .flex-container-row > * {
     height: 100%;
