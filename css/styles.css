@@ -1,0 +1,220 @@
+/*! REGOLE GENERALI PAGINA */
+
+/** RESET PAGINA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/*! REGOLE GENERALI FLEXBOX  */
+
+/** Flex-container con Main-Axis orizzontale */
+.flex-container-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.flex-container-column>*:not(#main-header):not(#footer-separatore):not(.footer-section-logo-bottone) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/** Flex-container con Main-Axis verticale */
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/*! INTESTAZIONE PAGINA */
+header {
+    height: 400px;
+}
+
+/** Sezione Main-Header */
+#main-header {
+    flex-basis: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* Debug */
+    background-color: aqua;
+}
+
+/* Barra di navigazione Header */
+#flex-nav {
+    height: 100%;                           /* altezza 100% rispetto al padre -> main-header */
+}
+
+/* Logo-Link-Login */
+.item-nav
+{
+    flex-grow: 1;                           /* Espansione dei flex-items: Logo-Link-Login*/
+
+    /* Debug */
+    background-color: yellow;
+}
+
+/* Logo nav */
+.logo {
+    padding-left: 5px;
+}
+
+/* Link nav */
+.link {
+    text-align: center;
+}
+
+/* Login nav */
+.login {
+    text-align: end;
+    padding-right: 5px;
+}
+
+/** Sezione Hero-Header */
+#hero-header {
+    flex-basis: 90%;
+
+    /* Debug */
+    background-color: blue;
+}
+
+.item-hero {
+    flex-basis: 80%;
+
+    /* Debug */
+    background-color: rgb(232, 74, 237);
+}
+
+/*! CONTENUTO PRINCIPALE */
+
+/** Colori main-section */
+.bg-color-white {
+    background-color: white;
+}
+
+.bg-color-grey {
+    background-color: rgb(212, 210, 210);
+}
+
+/** Figli di main-section server discord, canale vocale e community */
+.item-main-section-left {
+    flex-basis: 60%;
+}
+
+.item-main-section-right {
+    flex-basis: 40%;
+}
+
+/** Figlo di main-section tecnologia */
+.item-main-section-full {
+    flex-basis: 100%;
+
+    /* Debug */
+    background-color: green;
+}
+
+/*! PIE' DI PAGINA */
+footer {
+    background-color: black;
+}
+
+/** FOOTER SEZIONE LINK E SOCIAL */
+.footer-section-link-social {
+    flex-basis: 90%;
+}
+
+/* Footer sezione social */
+.footer-section-social {
+    flex-basis: 30%;
+
+    /* Debug */
+    background-color: rgb(200, 90, 108); 
+} 
+
+/* Footer sezione link */
+.footer-section-link {
+    display: flex;
+    flex-basis: 70%;
+
+    /* Debug */
+    background-color: rgb(37, 125, 128);
+}
+
+/* Figli di Footer sezione link */
+.footer-section-link > * {
+    flex-basis: calc(100% / 4);
+}
+
+/** FOOTER SEPARATORE */
+#footer-separatore {
+    border: 0.5px solid white;
+    width: 100%;
+}
+
+/** FOOTER SEZIONE LOGO E BOTTONE */
+.footer-section-logo-bottone {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 140px 0;
+
+    /* Debug */
+    background-color: rgb(35, 192, 116);
+}
+
+.bottone-footer {
+    padding: 2px;
+}
+
+/*! DEBUG */
+
+/** DEBUG BORDI LAYOUT */
+
+/* Bordi sezioni */
+.flex-container-row > *, .footer-section-logo-bottone > * {
+    border: 1px dotted black;
+    color: black;
+}
+
+.footer-section-link > * {
+    border: 1px dotted white;
+}
+
+/** DEBUG ALTEZZE */
+
+/* Altezza primi 3 figli di main-section */
+main > section:not(:nth-child(4)) {
+    height: 400px;
+}
+
+/* Altezza 4 figlo di main-section */
+main>section:nth-child(4) {
+    height: 500px;
+}
+
+footer {
+    height: 450px;
+}
+
+.flex-container-row > * {
+    height: 100%;
+}
+
+/** DEBUG COLORI */
+
+.bg-color-pink {
+    background-color: pink;
+}
+
+.bg-color-lightblue {
+    background-color: lightblue;
+}
