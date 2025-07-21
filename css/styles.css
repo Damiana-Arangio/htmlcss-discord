@@ -1,10 +1,15 @@
-/*! REGOLE GENERALI PAGINA */
+/*! REGOLE GENERALI */
 
 /** RESET PAGINA */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;
 }
 
 /** LISTE */
@@ -22,15 +27,46 @@ a {
     color: white;
 }
 
-/** TESTO */
-body {
-    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 13px;
-
-    /* Debug */
-    /* color: blue; */
+/** BOTTONI */
+button {
+    border-color: transparent;
+    border-radius: 20px;
 }
 
+/*! UTILS */
+
+/** PADDING BOTTONI */
+.button-small {
+    padding: 6px 10px;
+}
+
+.button-big {
+    padding: 10px 20px;
+}
+
+/** DIMENSIONE TESTI*/
+.text-medium {
+    font-size: 16px;
+}
+.text-big {
+    font-size: 42px;
+}
+
+/** COLORI*/
+
+/*Colori background*/
+.bg-color-dark {
+background-color: #23272A;
+}
+
+/* Colori testo */
+.color-black {
+    color: black;
+}
+
+.color-white {
+    color: white;
+}
 
 /*! REGOLE GENERALI FLEXBOX  */
 
@@ -80,9 +116,6 @@ header {
     display: flex;
     gap: 20px;
     align-items: center;
-    
-    /* Debug */
-    background-color: yellow;
 }
 
 /* Logo nav */
@@ -110,9 +143,12 @@ header {
 
 .item-hero {
     flex-basis: 80%;
+    text-align: center;
+    margin: 160px 275px 0;
+}
 
-    /* Debug */
-    background-color: rgb(232, 74, 237);
+.item-hero>* {
+    margin-bottom: 25px;
 }
 
 /*! CONTENUTO PRINCIPALE */
@@ -144,9 +180,6 @@ header {
 }
 
 /*! PIE' DI PAGINA */
-footer {
-    background-color: black;
-}
 
 /** FOOTER SEZIONE LINK E SOCIAL */
 .footer-section-link-social {
