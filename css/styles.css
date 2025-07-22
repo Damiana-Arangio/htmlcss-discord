@@ -17,10 +17,6 @@ ul {
     list-style-type: none;
 }
 
-li {
-    /* display: inline; */
-}
-
 /** LINK */
 a {
     text-decoration: none;
@@ -35,7 +31,7 @@ button {
 
 /*! UTILS */
 
-/** PADDING BOTTONI */
+/** PADDING BOTTONI e COLONNE*/
 .button-small {
     padding: 6px 10px;
 }
@@ -44,18 +40,23 @@ button {
     padding: 10px 20px;
 }
 
-/** DIMENSIONE TESTI*/
+.padding-column {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/** DIMENSIONE e CENTRATURA TESTI*/
 
 .text-medium {
     font-size: 16px;
 }
 
 .text-big {
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .text-extrabig {
-    font-size: 2.7rem;
+    font-size: 2.1rem;
 }
 
 /** COLORI*/
@@ -92,15 +93,18 @@ background-color: #23272A;
     padding-right: 300px;
 }
 
-.flex-container-column>*:not(#main-header):not(#footer-separatore):not(.footer-section-logo-bottone) {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
 /** Flex-container con Main-Axis verticale */
 .flex-container-column {
     display: flex;
     flex-direction: column;
+}
+
+.flex-container-column.container-tecnologia {
+    align-items: center;
+}
+
+.align-top {
+    align-items: flex-start;
 }
 
 /*! INTESTAZIONE PAGINA */
@@ -156,7 +160,8 @@ header {
 .item-hero {
     flex-basis: 80%;
     text-align: center;
-    margin: 115px 122px 0;
+    margin: 60px 122px;
+    
 }
 
 .item-hero>* {
@@ -174,23 +179,9 @@ header {
     background-color: rgb(212, 210, 210);
 }
 
-/** Figli di main-section server discord, canale vocale e community */
-.item-main-section-left {
-    flex-basis: 60%;
+.container-tecnologia > div {
+    width: 50%;
 }
-
-.item-main-section-right {
-    flex-basis: 40%;
-}
-
-/** Figlo di main-section tecnologia */
-.item-main-section-full {
-    flex-basis: 100%;
-
-    /* Debug */
-    background-color: green;
-}
-
 /*! PIE' DI PAGINA */
 
 /** FOOTER SEZIONE LINK E SOCIAL */
@@ -230,9 +221,6 @@ select {
 .footer-section-link {
     display: flex;
     flex-basis: 70%;
-
-    /* Debug */
-    /* background-color: rgb(37, 125, 128); */
 }
 
 .footer-section-link h4, .footer-section-link li {
@@ -258,52 +246,6 @@ select {
     justify-content: space-between;
     align-items: center;
     margin: 10px 280px;
-
-    /* Debug */
-    /* background-color: rgb(35, 192, 116); */
 }
 
 
-/*! DEBUG */
-
-/** DEBUG BORDI LAYOUT */
-
-/* Bordi sezioni */
-.flex-container-row > *, .footer-section-logo-bottone > * {
-    border: 1px dotted black;
-    color: black;
-}
-
-/* .footer-section-link > * {
-    border: 1px dotted white;
-} */
-
-/** DEBUG ALTEZZE */
-
-/* Altezza primi 3 figli di main-section */
-main > section:not(:nth-child(4)) {
-    height: 400px;
-}
-
-/* Altezza 4 figlo di main-section */
-main>section:nth-child(4) {
-    height: 500px;
-}
-
-/* footer {
-    height: 450px; 
-} */
-
-.flex-container-row > * {
-    height: 100%;
-}
-
-/** DEBUG COLORI */
-
-.bg-color-pink {
-    background-color: pink;
-}
-
-.bg-color-lightblue {
-    background-color: lightblue;
-}
