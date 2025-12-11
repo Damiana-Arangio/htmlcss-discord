@@ -1,17 +1,17 @@
-<h1 align="center">Clone Discord</h1>
+<h1 align="center">Pagina principale Discord</h1>
 
 <p align="center">
-  Esercizio svolto durante il corso Boolean per esercitarmi nella riproduzione del layout del sito Discord con HTML e CSS.
+  Esercizio svolto durante il corso Boolean per esercitarmi nella riproduzione della pagina principale di Discord con HTML e CSS.
 </p>
 
 ## Obiettivo
 
-- Copiare la struttura a blocchi realizzata nella repo precedente (`htmlcss-struttura-discord`) in una nuova repo.
-- Riprodurre il layout di Discord in modo il più possibile fedele allo screenshot fornito.
+- Copiare la struttura a blocchi realizzata nell’esercizio precedente (`htmlcss-struttura-discord`) in una nuova repo.
+- Riprodurre il layout fornito nello screenshot, ispirato al sito Discord, limitandosi alle sezioni mostrate a lezione.
 - Partire dai blocchi colorati e, solo quando la struttura funziona, aggiungere i dettagli sezione per sezione:
   - header con logo, menu e pulsanti;
   - sezioni centrali con testi e immagini;
-  - footer con link e icone.
+  - footer / parte finale con link e icone (se inclusi nello screenshot).
 
 ## Approccio e buone pratiche
 
