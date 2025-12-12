@@ -1,43 +1,47 @@
+<p align="center">
+  <img src="img/boolean-logo.png" alt="Boolean logo" width="35">
+</p>
+
 <h1 align="center">Pagina principale Discord</h1>
 
-<p align="center">
-  Esercizio svolto durante il corso Boolean per esercitarmi nella riproduzione della pagina principale di Discord con HTML e CSS.
-</p>
+Pagina HTML/CSS che riproduce un layout ispirato alla pagina principale di Discord,
+concentrandosi sulle sezioni viste a lezione (header, hero e sezioni centrali).
 
 ## Obiettivo
 
-- Copiare la struttura a blocchi realizzata nell’esercizio precedente (`htmlcss-struttura-discord`) in una nuova repo.
-- Riprodurre il layout fornito nello screenshot, ispirato al sito Discord, limitandosi alle sezioni mostrate a lezione.
-- Partire dai blocchi colorati e, solo quando la struttura funziona, aggiungere i dettagli sezione per sezione:
-  - header con logo, menu e pulsanti;
-  - sezioni centrali con testi e immagini;
-  - footer / parte finale con link e icone (se inclusi nello screenshot).
+- Partire dalla struttura a blocchi realizzata nell’esercizio precedente sulla struttura di Discord
+- Riprodurre il layout fornito nello screenshot, ispirato al sito Discord
+- Procedere dai blocchi colorati ai dettagli grafici, lavorando una sezione alla volta:
+  - header con logo, menu e pulsanti
+  - sezioni centrali con testi e immagini
+  - parte finale della pagina (se prevista nello screenshot)
 
 ## Approccio e buone pratiche
 
-- Creare classi riutilizzabili individuando gli elementi ricorrenti nel layout, per ridurre ripetizioni e rendere il codice più pulito e mantenibile.
-- Centralizzare il più possibile le regole comuni in CSS.
-- Non lavorare ancora sul responsive completo, ma iniziare a usare dove possibile unità relative senza aggiungere complessità inutile.
+- Creare classi riutilizzabili individuando gli elementi ricorrenti nel layout,
+  per ridurre le ripetizioni e rendere il codice più pulito e mantenibile
+- Centralizzare il più possibile le regole comuni in CSS
+- Non lavorare ancora sul responsive completo, ma iniziare a usare dove possibile unità relative
+  senza introdurre complessità non necessaria
 
 ## Anteprima
 
-![Anteprima1](img/Screen1.png)
-![Anteprima2](img/Screen2.png)
-![Anteprima3](img/Screen3.png)
-![Anteprima4](img/Screen4.png)
-![Anteprima5](img/Screen5.png)
-![Anteprima6](img/Screen6.png)
-
+![Anteprima 1](img/Screen1.png)  
+![Anteprima 2](img/Screen2.png)  
+![Anteprima 3](img/Screen3.png)  
+![Anteprima 4](img/Screen4.png)  
+![Anteprima 5](img/Screen5.png)  
+![Anteprima 6](img/Screen6.png)
 
 ## Risorse utilizzate
 
 - Icone: Font Awesome  
-  - CDN: https://cdnjs.com/libraries/font-awesome  
-  - Ricerca icone: https://fontawesome.com/search
+  - CDN: <https://cdnjs.com/libraries/font-awesome>  
+  - Ricerca icone: <https://fontawesome.com/search>
 - Font:
   - `Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif`
 
 ## Tecnologie utilizzate
 
-- HTML  
-- CSS
+- HTML5  
+- CSS3
